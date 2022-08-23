@@ -1,0 +1,46 @@
+<!--ul>
+    <li *ngFor="let movie of movies">
+        <a> 
+        <img src= {{movie.movieUrl}} alt="movie images" title = {{movie.movieName}} >
+        
+    </a>
+    <div class="content">
+        <div class="name">
+            {{movie.movieName}}
+        </div>
+        
+    </div>
+    </li>
+</ul -->
+
+<div class="container">
+    <!--div class="row" -->
+        <ng-container *ngFor="let movie of movies ">
+            <div class="card col-md-3">
+                <img src="{{movie.movieUrl}}" alt="" title="{{movie.movieName}}" >
+                <h2 style="color: blue; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">Title:{{movie.movieName}}</h2>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">Overview:{{movie.movieOverview}}</p>
+                <p><strong>Actor:</strong> ${{movie.movieActor}}</p>
+                
+                <span class="buttons">
+                    <button class="btn btn-primary" (click)=viewMovie(movie.movieId)>View</button>
+                    <span>&nbsp;</span> 
+                    <button class="btn btn-primary" (click)=editMovie(movie)>Edit</button>
+                    <span>&nbsp;</span>
+                    <button class="btn btn-primary" (click)=deleteMovie(movie)>Delete</button>
+                </span>
+                
+                
+                
+            </div >
+        </ng-container>
+
+    <!-- /div -->
+</div>
+
+
+
+
+
+
+

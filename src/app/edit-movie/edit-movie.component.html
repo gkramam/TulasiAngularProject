@@ -1,0 +1,25 @@
+<p>edit-movie works!</p>
+"movieCost": 100,
+"movieReleaseYear":2004
+<div class="container">
+    <!--div class="row" -->
+        <ng-container>
+        <!-- <div class="form" *ngFor="let movie of movies"> -->
+                <img src="{{movie.movieUrl}}" alt="">
+                <h2 style="color: blue; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">Title:{{movie.movieName}}</h2>
+                <p><strong>Genre:</strong> {{movie.movieGerne}}</p>
+                <p><strong>Actor:</strong> {{movie.movieActor}}</p>
+                
+                <p><strong>Duration:</strong> {{movie.movieDuration}}</p>
+                <p><strong>Rating:</strong> {{movie.movieReview}}</p>
+                <p><strong>Cost:</strong> {{movie.movieCost}}</p>
+                <p><strong>Release Year:</strong> {{movie.movieReleaseYear}}</p>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;"><strong>Overview:</strong>{{movie.movieOverview}}</p>
+                <span><button class="btn btn-warning" (click)=saveEditOperation(movie)>Save</button> </span>
+                <span><button class="btn btn-danger" (click)=cancelEditOperation(movie)>Cancel</button></span>
+                
+        <!-- </div> -->
+        </ng-container>
+
+    <!-- /div -->
+</div>

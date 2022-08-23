@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* add google fonts to this application */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+/* Google Fonts is a collection of interactive application programming interfaces 
+that allow users to use web fonts on their website. 
+Google fonts can be used on our website by adding CSS or JavaScript into your source code. */
+
+
+/*asterisk in css is a wildcard, this means it will select all elements within 
+that portion of the DOM and style. */
