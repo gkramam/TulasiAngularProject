@@ -1,26 +1,20 @@
-.backgroundGradientOverlay{
-    background-image: -webkit-gradient(linear, left top, right top, from(#4e63d7), to(#76bfe9)) !important;
-    background-image: linear-gradient(to right, #4e63d7 0%, #76bfe9 100%) !important;
-    margin-top:100px;
-    margin-left:10px;
-    margin-right:10px;
-        
-    /* To cover background to all four corners of viewport*/
-    position:absolute;
-    top:0px;
-    right:0px;
-    bottom:0px;
-    left:0px;
-    /* align-content: space-around; */
-}
-
 .card {
     margin: 0 auto; /* Added */
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
     width: 300px;
-
-    /* -webkit-box-shadow: 0 10px 20px 0 rgba(222, 177, 15, 0.1);
-    box-shadow: 0 10px 20px 0 rgba(94, 201, 149, 0.1);
-    border-radius: 10px; */
 }
+
+.Absolute-Center {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+  
+  .Absolute-Center.is-Responsive {
+    width: 50%; 
+    height: 50%;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 40px;
+  }
