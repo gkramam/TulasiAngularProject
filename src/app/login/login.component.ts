@@ -10,7 +10,7 @@ import { User } from '../shared/models/user';
 
 //import { AccountService, AlertService } from '@app/_services';
 
-@Component({ templateUrl: 'login.component.html' })
+@Component({ templateUrl: 'login.component.html' , styleUrls: ['login.component.css']})
 export class LoginComponent implements OnInit {
     form: FormGroup;
     loading = false;
